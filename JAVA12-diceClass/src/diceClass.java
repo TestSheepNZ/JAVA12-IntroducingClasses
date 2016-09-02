@@ -21,7 +21,6 @@ public class diceClass {
 	//Attributes
 	private int numSides;
 	private int diceRollValue;
-	private boolean IsThePopeCatholic = true;
 	
 	//Methods
 	public void setNumSides (int sides)
