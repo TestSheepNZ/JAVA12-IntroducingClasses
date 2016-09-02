@@ -1,3 +1,15 @@
+/*
+ * This program is part of my learning Java series
+ * This one looks at an introduction to classes
+ * 
+ * Find the blog here,
+ * http://testsheepnz.blogspot.co.nz/2016/09/java-12-introducing-classes.html
+ * 
+ * For more information - please reread.
+ * 
+ * Mike Talks, Sept 2016
+ */
+
 import org.junit.Test;
 import static org.junit.Assert.*;
  
