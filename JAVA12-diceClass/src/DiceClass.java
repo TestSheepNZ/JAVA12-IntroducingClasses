@@ -45,13 +45,9 @@ public class DiceClass {
 	public boolean diceOnOrUnder (int threshold)
 	{
 		if (diceRollValue <= threshold)
-		{
 			return true;
-		}
 		else
-		{
 			return false;
-		}
 	}
 	
 	public boolean diceOnOrOver (int threshold)
