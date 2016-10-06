@@ -16,7 +16,7 @@ import static org.junit.Assert.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class diceClass {
+public class DiceClass {
 
 	//Attributes
 	private int numSides;
@@ -42,38 +42,51 @@ public class diceClass {
 		return diceRollValue;
 	}
 	
-	public int diceOnOrUnder (int threshold)
+	public boolean diceOnOrUnder (int threshold)
 	{
 		if (diceRollValue <= threshold)
-			return 1;
+		{
+			return true;
+		}
 		else
-			return 0;
+		{
+			return false;
+		}
 	}
 	
-	public int diceOnOrOver (int threshold)
+	public boolean diceOnOrOver (int threshold)
 	{
 		if (diceRollValue >= threshold)
-			return 1;
+		{
+			return true;
+		}
 		else
-			return 0;
+		{
+			return false;
+		}
 	}
 	
-	public int diceEquals (int target)
+	public boolean diceEquals (int target)
 	{
 		if (diceRollValue == target)
-			return 1;
+		{
+			return true;
+		}
 		else
-			return 0;
+		{
+			return false;
+		}
 	}	
 	
 	@Test
 	public void firsttest()
 	{
-		diceClass dice1 = new diceClass();
+		DiceClass dice1 = new DiceClass();
 		dice1.setNumSides(6);
 		
 		for (int count=0 ; count < 20 ; count ++)
+		{
 			dice1.rollDice();
-		
+		}
 	}
 }
